@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+.navContainer {
+  font-family: "League Spartan", sans-serif;
+  .navItems {
+    position: fixed;
+    padding: 20px;
+    right: 170px;
+    .toTop {
+      bottom: 0px;
+      right: -10px;
+      position: absolute;
+    }
+    .toLeft {
+      bottom: 0px;
+      right: -10px;
+      transform: translateY(105px) translateX(-104px) scale(-1) rotate(90deg);
+      position: absolute;
+    }
+    .navItem {
+      font-weight: 300;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      cursor: pointer;
+      position: relative;
+      padding: 12px 10px;
+
+      &::after {
+        content: "";
+        height: 3px;
+        width: 0;
+        background-color: #009688;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+        transition: transform 250ms ease-in-out;
+        visibility: hidden;
+      }
+      &:hover::after {
+        width: 100%;
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
+  }
+}

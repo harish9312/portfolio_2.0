@@ -1,35 +1,65 @@
+"use client";
 import classNames from "./navigation.module.scss";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const routeArray = [
+  { pathName: "/", title: "About" },
+  { pathName: "/experience", title: "Experience" },
+  { pathName: "/tech-stack", title: "Tech Stack" },
+  {
+    target: "_blank",
+    pathName:
+      "https://drive.google.com/file/d/1iaisaKtJOx5nVlVe_bxj99V8ZS2LhhRx/view",
+    title: "Resume",
+  },
+];
 
 export const Navigation = () => {
+  const pathname = usePathname();
   return (
     <div className={classNames.navContainer}>
       <div className={classNames.navItems}>
         <div className={classNames.toTop}>
           <Line />
         </div>
-        <div className={classNames.toLeft}>
-          <Line />
-        </div>
-        <div className={classNames.navItem}>
-          <Link href="/about">About</Link>
-        </div>
-        <div className={classNames.navItem}>
-          <Link href={"/experience"}>Experience</Link>
-        </div>
-        <div className={classNames.navItem}>
-          <Link href={"/repos"}>Repos</Link>{" "}
-        </div>
-        <div className={classNames.navItem}>
-          <Link href={"/tech-stack"}>Tech Stack</Link>
-        </div>
-        <div className={classNames.navItem}>
-          <Link href={"/resume"}>Resume</Link>
+        <div className={classNames.items}>
+          {routeArray.map((route) => {
+            return (
+              <Link
+                target={route.target}
+                key={route.pathName}
+                href={route.pathName}
+              >
+                <LinkComponent isActive={pathname === route.pathName}>
+                  {route.title}
+                </LinkComponent>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </div>
   );
 };
+
+const LinkComponent = ({
+  isActive,
+  children,
+}: {
+  isActive: boolean;
+  children: string;
+}) => (
+  <div
+    className={
+      isActive
+        ? `${classNames.navItem} ${classNames.active}`
+        : classNames.navItem
+    }
+  >
+    <div className={classNames.text}>{children}</div>
+  </div>
+);
 
 export const Line = () => {
   return (
@@ -40,10 +70,7 @@ export const Line = () => {
       viewBox="0 0 6 216"
       fill="none"
     >
-      <path
-        d="M0 6C0 2.68629 2.68629 0 6 0V216H0V6Z"
-        fill="url(#paint0_linear_909_81)"
-      />
+      <rect width="6" height="216" rx="3" fill="url(#paint0_linear_909_81)" />
       <defs>
         <linearGradient
           id="paint0_linear_909_81"
@@ -53,8 +80,8 @@ export const Line = () => {
           y2="216"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#59E15F" stopOpacity="0.42" />
-          <stop offset="1" stopColor="#4FB477" />
+          <stop stop-color="#59E15F" stopOpacity="0.42" />
+          <stop offset="1" stop-color="#4FB477" />
         </linearGradient>
       </defs>
     </svg>

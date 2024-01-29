@@ -6,9 +6,7 @@ import { BasePage } from "@/components/BasePage";
 export default function Home() {
   return (
     <>
-      <BasePage showIntro>
-        <div>HEllo</div>
-      </BasePage>
+      <BasePage showIntro />
     </>
   );
 }

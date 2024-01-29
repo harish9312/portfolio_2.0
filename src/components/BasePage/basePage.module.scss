@@ -1,47 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap");
-
 $color: #1f1f1f;
+$iconSize: 2.5em;
 
 .basePageContainer {
   height: 100%;
   color: white;
   background: $color;
-  padding: 120px;
+  // padding: 120px;
   overflow: hidden;
+
+  .icons {
+    position: absolute;
+    bottom: 12%;
+    left: 2%;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    .devTo {
+      height: $iconSize;
+      animation: svgAnimation 2s ease;
+    }
+
+    @keyframes svgAnimation {
+      0% {
+        width: 0em;
+      }
+      40% {
+        width: 0em;
+      }
+      100% {
+        width: $iconSize;
+      }
+    }
+
+    .commonIcon {
+      width: $iconSize;
+      height: $iconSize;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.4);
+      }
+    }
+  }
+
   .topLeft {
     display: flex;
     flex-direction: column;
+    position: absolute;
+
     .baseBorderToBottom {
-      transform: translateX(-145px) translateY(120px) rotate(90deg) scaleY(-1);
+      // transform: translateX(-145px) translateY(120px) rotate(90deg) scaleY(-1);
     }
     .baseBorderToRight {
     }
   }
-  .midContent {
-    padding: 200px;
-    .me {
+  .introSection {
+    height: 100%;
+    display: flex;
+
+    .baseIntro {
+      position: relative;
+      min-height: 65vh;
+      z-index: 0;
       display: flex;
-      align-items: baseline;
-      .hi {
-        font-family: "Petit Formal Script", cursive;
-        font-size: 2rem;
-      }
-      .greet {
-        font-family: "Raleway", sans-serif;
-        font-size: 2rem;
-      }
-      .name {
-        font-size: 4rem;
-        font-weight: 300;
-        font-family: "Raleway", sans-serif;
+      flex-direction: column;
+      max-width: 70%;
+      min-width: 70%;
+      margin: auto auto auto auto;
+    }
+    .midContent {
+      // padding: 200px;
+      max-width: 80%;
+      margin: auto;
+      .me {
+        display: flex;
+        align-items: baseline;
+        .hi {
+          font-family: "Petit Formal Script", cursive;
+          font-size: 2rem;
+        }
+        .greet {
+          font-family: "Raleway", sans-serif;
+          font-size: 2rem;
+        }
+        .name {
+          font-size: 4rem;
+          font-weight: 300;
+          font-family: "Raleway", sans-serif;
+        }
       }
     }
     .introduction {
       font-family: "League Spartan", sans-serif;
       font-weight: 200;
-      max-width: 75%;
+      // max-width: 75%;
       letter-spacing: 1px;
       line-height: 1.6;
       font-size: 1.2rem;
@@ -50,11 +103,11 @@ $color: #1f1f1f;
   }
   .bottomRight {
     position: absolute;
-    bottom: 120px;
-    right: -140px;
+    bottom: 0px;
+    right: 0px;
     .baseBorderToBottom {
-      transform: translateX(-165px) translateY(-145px) rotate(90deg) scale(-1)
-        scaleY(-1);
+      // transform: translateX(-165px) translateY(-145px) rotate(90deg) scale(-1)
+      //   scaleY(-1);
     }
     .baseBorderToRight {
       transform: scale(-1);

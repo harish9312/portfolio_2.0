@@ -4,9 +4,5 @@ import styles from "./page.module.css";
 import { BasePage } from "@/components/BasePage";
 
 export default function Home() {
-  return (
-    <>
-      <BasePage showIntro />
-    </>
-  );
+  return <BasePage showIntro />;
 }

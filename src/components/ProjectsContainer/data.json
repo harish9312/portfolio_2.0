@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Risk Management System",
+    "content": "- It was an online system being built for the employees of an organisation to evaluate the Job Safety, Personal Safety Analysis. The project included of the forms where the users can fill there analysis, the challenge was there to build the project robust since it was containing a lot of data from the backed, the project was built and completed single handedly. It helped the industries to automate the Severity and Risk Management.",
+    "techStackIcons": [
+      { "icon": "vscode-icons:file-type-reactjs", "name": "React.js" },
+      { "icon": "devicon:redux", "name": "Redux" },
+      { "icon": "vscode-icons:folder-type-typescript", "name": "TypeScript" },
+      { "icon": "vscode-icons:file-type-scss", "name": "SCSS" },
+      {
+        "icon": "nonicons:javascript-16",
+        "color": "#f7df1e",
+        "name": "JavaScript"
+      }
+    ]
+  },
+  {
+    "title": "Discussion Platform for Educators Communities",
+    "content": "- Provided feature & functional support the project which was built for communities which wanted to serve as the educator, the enrolled users can earn points by commenting and reacting on the peers post. It also empowers educators to connect, collaborate, and collectively enhance the quality of education, the tech stack which was used to build it was mainly Next.js and the backend was built in the node.js graphql.",
+    "techStackIcons": [
+      {
+        "icon": "teenyicons:nextjs-outline",
+        "color": "white",
+        "name": "Next.js"
+      },
+      { "icon": "devicon:redux", "name": "Redux" },
+      { "icon": "vscode-icons:folder-type-typescript", "name": "TypeScript" },
+      { "icon": "vscode-icons:file-type-scss", "name": "SCSS" },
+      {
+        "icon": "nonicons:javascript-16",
+        "color": "#f7df1e",
+        "name": "JavaScript"
+      }
+    ]
+  },
+  {
+    "title": "Investment & Trading Risk Monitoring",
+    "content": "- Provided feature & functional support a big project which included multiple tools to monitor, analyze, and mitigate risks associated with investment and trading activities in capital markets. This system operates in real-time, providing instantaneous insights into market conditions, portfolio performance, and potential risks.    ",
+    "techStackIcons": [
+      { "icon": "vscode-icons:file-type-reactjs", "name": "React.js" },
+      { "icon": "devicon:redux", "name": "Redux" },
+      { "icon": "vscode-icons:folder-type-typescript", "name": "TypeScript" },
+      { "icon": "vscode-icons:file-type-scss", "name": "SCSS" },
+      {
+        "icon": "nonicons:javascript-16",
+        "color": "#f7df1e",
+        "name": "JavaScript"
+      }
+    ]
+  },
+  {
+    "title": "CMS Integrations",
+    "content": "- Integrated a CMS to multiple websites for managing the contents for the organisational website data, and media assets. Enabling the timely updates for the copy changes and media modifications. It enabled the organisation for easy upgrade of the data whenever needed. ",
+    "techStackIcons": [
+      { "icon": "vscode-icons:file-type-reactjs", "name": "React.js" },
+      { "icon": "devicon:redux", "name": "Redux" },
+      { "icon": "vscode-icons:folder-type-typescript", "name": "TypeScript" },
+      { "icon": "vscode-icons:file-type-scss", "name": "SCSS" },
+      {
+        "icon": "nonicons:javascript-16",
+        "color": "#f7df1e",
+        "name": "JavaScript"
+      }
+    ]
+  }
+]

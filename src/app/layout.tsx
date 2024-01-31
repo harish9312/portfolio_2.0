@@ -21,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleAnalytics gaId="G-QMRS7YVE57" />
+      <head>
+        <GoogleAnalytics gaId="G-QMRS7YVE57" />
+        <script src="https://raw.githubusercontent.com/harish9312/my-portfolio/master/public/particles.js"></script>
+      </head>
       <body className={inter.className}>
         <NextTopLoader color="#ffffff" height={3} />
         <MouseTracker />

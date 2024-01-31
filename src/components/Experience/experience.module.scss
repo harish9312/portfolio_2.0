@@ -1,0 +1,46 @@
+.experienceContainer {
+  margin-top: 30px;
+  overflow-y: scroll;
+  min-height: 70vh;
+  max-height: 70vh;
+  color: #dedede;
+  padding-bottom: 28px;
+  .expContent {
+    margin: 30px 0px;
+    display: flex;
+    .left {
+      display: flex;
+      align-items: center;
+      min-width: 250px;
+      .duration {
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+      }
+    }
+    .right {
+      .top {
+        display: flex;
+        align-items: center;
+      }
+      .divider {
+        margin: 0 30px;
+        height: 30px;
+        width: 2px;
+        background: white;
+      }
+      .companyName {
+        font-size: 1.5rem;
+      }
+      .jobTitle {
+        font-size: 1.2rem;
+        margin: 20px 0px;
+      }
+      .responsibility {
+        line-height: 1.5;
+        font-size: 1.2rem;
+        font-weight: 200;
+        letter-spacing: 1.3px;
+      }
+    }
+  }
+}

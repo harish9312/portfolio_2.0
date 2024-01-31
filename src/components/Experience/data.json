@@ -1,0 +1,29 @@
+[
+  {
+    "duration": {
+      "from": "July 2017",
+      "to": "Jan 2021"
+    },
+    "title": "Software Developer",
+    "company": "Coditas Technologies",
+    "res": "Analyse the requirement and develop new user interface according to requirement, build the reusable component as per design. Maintain and timely updates and refactoring of the code. Writing Test Cases for the components."
+  },
+  {
+    "duration": {
+      "from": "Jan 2021",
+      "to": "Apr 2022"
+    },
+    "title": "Senior Software Developer",
+    "company": "Coditas Technologies",
+    "res": "Build scalable application, which includes various features and functionalities. Manage the team working on the project, do the timely code review and enhance the performance. Monitor the maintainability of the code. Gather the requirements from the client, develop the flow diagrams, and decide the suitable Tech Stack to use."
+  },
+  {
+    "duration": {
+      "from": "Apr 2022",
+      "to": "Present"
+    },
+    "title": "Tech Lead",
+    "company": "Coditas LLP",
+    "res": "Leading own team of developers, managing the project infrastructure, task assignment among the team. Building the High Level POC using the suitable tech stack for the projects. Doing the timely enhancements of the code base, including the Code Review. Taking the team stand-ups. Researching the new tech coming and updating the team on that, creating example to understand. Doing the deployment on the servers, or on the provider eg. Vercel. Engaging with the client."
+  }
+]

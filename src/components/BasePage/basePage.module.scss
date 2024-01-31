@@ -1,4 +1,4 @@
-$color: #1f1f1f;
+$color: #1e2b29;
 $iconSize: 2.5em;
 
 .basePageContainer {
@@ -59,9 +59,15 @@ $iconSize: 2.5em;
     height: 100%;
     display: flex;
 
+    .introContainer {
+      min-height: 65vh;
+      max-height: 65vh;
+      display: flex;
+      flex-direction: column;
+    }
+
     .baseIntro {
       position: relative;
-      min-height: 65vh;
       z-index: 0;
       display: flex;
       flex-direction: column;

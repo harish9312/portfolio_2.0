@@ -2,11 +2,13 @@
 import classNames from "./navigation.module.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import React from "react";
 
 const routeArray = [
   { pathName: "/", title: "About" },
+  { pathName: "/projects", title: "Projects" },
   { pathName: "/experience", title: "Experience" },
-  { pathName: "/tech-stack", title: "Tech Stack" },
+  // { pathName: "/tech-stack", title: "Tech Stack" },
   {
     target: "_blank",
     pathName:
@@ -17,8 +19,26 @@ const routeArray = [
 
 export const Navigation = () => {
   const pathname = usePathname();
+
+  const key = "DONE";
+
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.sessionStorage.setItem(key, "yes");
+    }
+  }, []);
+
+  let isDone;
+  if (typeof window !== "undefined") {
+    isDone = window.sessionStorage.getItem(key);
+  }
+
   return (
-    <div className={classNames.navContainer}>
+    <div
+      className={`${classNames.navContainer} ${
+        !isDone ? classNames.animate : ""
+      }`}
+    >
       <div className={classNames.navItems}>
         <div className={classNames.toTop}>
           <Line />
@@ -80,8 +100,8 @@ export const Line = () => {
           y2="216"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#59E15F" stopOpacity="0.42" />
-          <stop offset="1" stop-color="#4FB477" />
+          <stop stopColor="#59E15F" stopOpacity="0.42" />
+          <stop offset="1" stopColor="#4FB477" />
         </linearGradient>
       </defs>
     </svg>

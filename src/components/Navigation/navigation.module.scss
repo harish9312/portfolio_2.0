@@ -30,6 +30,10 @@
   }
 }
 
+.animate {
+  animation: animateNav 1.5s ease;
+}
+
 .navContainer {
   font-family: "League Spartan", sans-serif;
   position: fixed;
@@ -39,7 +43,6 @@
   top: 25%;
   z-index: 2;
   justify-content: right;
-
   .navItems {
     // padding-right: 30px;
     display: flex;
@@ -76,5 +79,14 @@
     .active {
       @include hoverActive();
     }
+  }
+}
+
+@keyframes animateNav {
+  0% {
+    transform: translate(-200px);
+  }
+  100% {
+    transform: translate(0px);
   }
 }

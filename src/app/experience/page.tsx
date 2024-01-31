@@ -1,11 +1,15 @@
 import { BasePage } from "@/components/BasePage";
-import classNames from "./about.module.scss";
+import { ExperienceContainer } from "@/components/Experience";
+import { HeightContainer } from "@/components/HeightContainer";
 import { Title } from "@/components/Title";
 
 const Experience = () => {
   return (
     <BasePage>
       <Title>Experience</Title>
+      <HeightContainer>
+        <ExperienceContainer />
+      </HeightContainer>
     </BasePage>
   );
 };

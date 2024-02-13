@@ -5,5 +5,5 @@ interface ITitleProps {
 }
 
 export const Title = (props: ITitleProps) => {
-  return <div className={classNames.title}>{props.children}</div>;
+  return <div className={classNames.title + " mont"}>{props.children}</div>;
 };

@@ -1,10 +1,11 @@
+import classNames from './heightContainer.module.scss'
 interface IHeghtContainerProps {
   children: JSX.Element | JSX.Element[] | string;
 }
 
 export const HeightContainer = (props: IHeghtContainerProps) => {
   return (
-    <div style={{ minHeight: "70vh", maxHeight: "70vh", overflow: "hidden" }}>
+    <div className={classNames.heightContainer}>
       {props.children}
     </div>
   );

@@ -4,12 +4,9 @@
   overflow: hidden;
 }
 
-
-
 @mixin mobileCommon($reduceBY: 70vh) {
   .heightContainer {
-    min-height: $reduceBY;
-    max-height: $reduceBY;
+    max-height: calc(78vh - 80px);
   }
 }
 

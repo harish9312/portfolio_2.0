@@ -133,8 +133,12 @@ $iconSize: 2.5em;
     }
     .introSection {
       .midContent {
-        margin-top: 70px;
+        margin-top: 30px;
+        overflow: scroll;
         .me {
+          .greet {
+            font-size: 1.8rem;
+          }
           .name {
             font-size: 1.8rem;
           }
@@ -145,6 +149,9 @@ $iconSize: 2.5em;
         min-width: 90%;
         margin-top: 24%;
       }
+    }
+    .bottomRight {
+      display: none;
     }
     .topLeft {
       display: none;

@@ -22,7 +22,6 @@ export const BasePage = (props: IBasePageProps = { showIntro: false }) => {
       className={`${classNames.basePageContainer} ${props.classNames?.containerClassName}`}
     >
       <Particles />
-      <Navigation />
       <div className={classNames.icons}>
         <Link target="_blank" href={"https://github.com/harish9312/"}>
           <GHIcon className={classNames.commonIcon} />
@@ -43,6 +42,7 @@ export const BasePage = (props: IBasePageProps = { showIntro: false }) => {
           <Fade>{props.children}</Fade>
         </div>
       </div>
+      <Navigation />
     </div>
   );
 };

@@ -130,10 +130,9 @@ $iconSize: 2.5em;
       right: 20px;
       left: unset;
       max-height: 50px;
-      display: none;
     }
     .introSection {
-      height: calc(100% - 14vh);
+      // height: calc(100% - 14vh);
       .midContent {
         margin-top: 30px;
         overflow: scroll;

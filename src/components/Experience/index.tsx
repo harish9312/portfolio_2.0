@@ -17,7 +17,7 @@ interface IExpRow {
 export const ExperienceContainer = () => {
   return (
     <div className={classNames.experienceContainer + " no-scrollbar spartan"}>
-      {data.map((job, index) => (
+      {data.reverse().map((job, index) => (
         <ExpRow
           key={createNodeKey(index)}
           duration={job.duration}

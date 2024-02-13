@@ -1,19 +1,21 @@
 "use client";
+import { BagIcon, MeIcon, ProjectsIcon, ResumeIcon } from "@/Icons/BottomIcons";
 import classNames from "./navigation.module.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
 const routeArray = [
-  { pathName: "/", title: "About" },
-  { pathName: "/projects", title: "Projects" },
-  { pathName: "/experience", title: "Experience" },
+  { pathName: "/", title: "About", icon: <MeIcon /> },
+  { pathName: "/projects", title: "Projects", icon: <ProjectsIcon /> },
+  { pathName: "/experience", title: "Experience", icon: <BagIcon /> },
   // { pathName: "/tech-stack", title: "Tech Stack" },
   {
     target: "_blank",
     pathName:
       "https://drive.google.com/file/d/1iaisaKtJOx5nVlVe_bxj99V8ZS2LhhRx/view",
     title: "Resume",
+    icon: <ResumeIcon />,
   },
 ];
 
@@ -34,30 +36,55 @@ export const Navigation = () => {
   }
 
   return (
-    <div
-      className={`${classNames.navContainer} ${
-        !isDone ? classNames.animate : ""
-      }`}
-    >
-      <div className={classNames.navItems}>
-        <div className={classNames.toTop}>
-          <Line />
+    <>
+      <MobileNav pathname={pathname} />
+      <div
+        className={`${classNames.navContainer} ${
+          !isDone ? classNames.animate : ""
+        }`}
+      >
+        <div className={classNames.navItems}>
+          <div className={classNames.toTop}>
+            <Line />
+          </div>
+          <div className={classNames.items}>
+            {routeArray.map((route) => {
+              return (
+                <Link
+                  target={route.target}
+                  key={route.pathName}
+                  href={route.pathName}
+                >
+                  <LinkComponent isActive={pathname === route.pathName}>
+                    {route.title}
+                  </LinkComponent>
+                </Link>
+              );
+            })}
+          </div>
         </div>
-        <div className={classNames.items}>
-          {routeArray.map((route) => {
-            return (
-              <Link
-                target={route.target}
-                key={route.pathName}
-                href={route.pathName}
-              >
-                <LinkComponent isActive={pathname === route.pathName}>
-                  {route.title}
-                </LinkComponent>
-              </Link>
-            );
-          })}
-        </div>
+      </div>{" "}
+    </>
+  );
+};
+
+const MobileNav = ({ pathname }: { pathname: string }) => {
+  return (
+    <div className={classNames.mobileNavContainer}>
+      <div className={classNames.items}>
+        {routeArray.map((route) => {
+          return (
+            <Link
+              target={route.target}
+              key={route.pathName}
+              href={route.pathName}
+            >
+              <LinkComponent isActive={pathname === route.pathName}>
+                {route.icon}
+              </LinkComponent>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );
@@ -68,7 +95,7 @@ const LinkComponent = ({
   children,
 }: {
   isActive: boolean;
-  children: string;
+  children: string | JSX.Element;
 }) => (
   <div
     className={

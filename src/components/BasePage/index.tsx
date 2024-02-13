@@ -18,32 +18,34 @@ interface IBasePageProps {
 
 export const BasePage = (props: IBasePageProps = { showIntro: false }) => {
   return (
-    <div
-      className={`${classNames.basePageContainer} ${props.classNames?.containerClassName}`}
-    >
+    <>
       <Particles />
-      <div className={classNames.icons}>
-        <Link target="_blank" href={"https://github.com/harish9312/"}>
-          <GHIcon className={classNames.commonIcon} />
-        </Link>
-        <LinkedInIcon className={classNames.commonIcon} />
-        <Link target="_blank" href={"https://dev.to/harish_soni"}>
-          <DevTo
-            className={classNames.commonIcon}
-            innerClassName={classNames.devTo}
-          />
-        </Link>
-      </div>
-      <div className={`${classNames.introSection}`}>
-        <div
-          className={`${props.classNames?.introClassName} ${classNames.baseIntro}`}
-        >
-          {props.showIntro && <Introduction />}
-          <Fade>{props.children}</Fade>
+      <div
+        className={`${classNames.basePageContainer} ${props.classNames?.containerClassName}`}
+      >
+        <div className={classNames.icons}>
+          <Link target="_blank" href={"https://github.com/harish9312/"}>
+            <GHIcon className={classNames.commonIcon} />
+          </Link>
+          <LinkedInIcon className={classNames.commonIcon} />
+          <Link target="_blank" href={"https://dev.to/harish_soni"}>
+            <DevTo
+              className={classNames.commonIcon}
+              innerClassName={classNames.devTo}
+            />
+          </Link>
         </div>
+        <div className={`${classNames.introSection}`}>
+          <div
+            className={`${props.classNames?.introClassName} ${classNames.baseIntro}`}
+          >
+            {props.showIntro && <Introduction />}
+            <Fade>{props.children}</Fade>
+          </div>
+        </div>
+        <Navigation />
       </div>
-      <Navigation />
-    </div>
+    </>
   );
 };
 

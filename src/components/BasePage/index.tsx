@@ -55,7 +55,7 @@ const Introduction = () => {
           <Line className={classNames.baseBorderToRight} />
         </div>
       </Fade>
-      <div className={classNames.midContent}>
+      <div className={classNames.midContent + " no-scrollbar"}>
         <div className={classNames.me}>
           <Slide>
             <div className={classNames.hi}>Hi,</div>

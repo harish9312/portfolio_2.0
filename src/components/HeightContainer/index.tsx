@@ -5,7 +5,7 @@ interface IHeghtContainerProps {
 
 export const HeightContainer = (props: IHeghtContainerProps) => {
   return (
-    <div className={classNames.heightContainer}>
+    <div className={classNames.heightContainer + ' no-scrollbar'}>
       {props.children}
     </div>
   );

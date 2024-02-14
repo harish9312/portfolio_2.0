@@ -27,7 +27,9 @@ export const BasePage = (props: IBasePageProps = { showIntro: false }) => {
           <Link target="_blank" href={"https://github.com/harish9312/"}>
             <GHIcon className={classNames.commonIcon} />
           </Link>
-          <LinkedInIcon className={classNames.commonIcon} />
+          <Link target="_blank" href={"https://www.linkedin.com/in/harish-soni-1b8065119"}>
+            <LinkedInIcon className={classNames.commonIcon} />
+          </Link>
           <Link target="_blank" href={"https://dev.to/harish_soni"}>
             <DevTo
               className={classNames.commonIcon}

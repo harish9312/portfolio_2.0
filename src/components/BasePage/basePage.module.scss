@@ -131,17 +131,18 @@ $iconSize: 2.5em;
       max-height: 50px;
     }
     .introSection {
-      max-height: calc(100% - 104px);
-      min-height: calc(100% - 104px);
+      max-height: calc(100% - 94px);
+      min-height: calc(100% - 94px);
       overflow: hidden;
       .introContainer{
         min-height: 72vh;
         max-height: 72vh;
       }
       .midContent {
-        margin-top: 30px;
+        margin-top: 10px;
         overflow: scroll;
         max-width: 90%;
+        padding-bottom: 30px;
         .me {
           .greet {
             font-size: 1.8rem;

@@ -19,7 +19,7 @@ interface IBasePageProps {
 export const BasePage = (props: IBasePageProps = { showIntro: false }) => {
   return (
     <>
-      <Particles />
+      {/* <Particles /> */}
       <div
         className={`${classNames.basePageContainer} ${props.classNames?.containerClassName}`}
       >

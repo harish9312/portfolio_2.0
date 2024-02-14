@@ -1,4 +1,9 @@
-$color: #2e403d;
+$color: linear-gradient(
+  336deg,
+  rgba(46, 64, 61, 1) 0%,
+  rgba(33, 61, 57, 1) 35%,
+  rgba(88, 125, 119, 1) 100%
+);
 $iconSize: 2.5em;
 
 .basePageContainer {
@@ -129,14 +134,21 @@ $iconSize: 2.5em;
       right: 20px;
       left: unset;
       max-height: 50px;
+      .commonIcon,
+      .devTo {
+        height: 2em;
+      }
     }
     .introSection {
       max-height: calc(100% - 94px);
       min-height: calc(100% - 94px);
       overflow: hidden;
-      .introContainer{
+      .introContainer {
         min-height: 72vh;
         max-height: 72vh;
+      }
+      .introduction {
+        font-size: 18px;
       }
       .midContent {
         margin-top: 10px;

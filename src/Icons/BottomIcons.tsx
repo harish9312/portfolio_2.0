@@ -148,8 +148,8 @@ export const DevTo = ({
 export const MeIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="2.6em"
-    height="2.6em"
+    width="2.5em"
+    height="2.5em"
     viewBox="0 0 20 20"
   >
     <path
@@ -162,8 +162,8 @@ export const MeIcon = () => (
 export const ProjectsIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="2.6em"
-    height="2.6em"
+    width="2.5em"
+    height="2.5em"
     viewBox="0 0 24 24"
   >
     <path
@@ -176,8 +176,8 @@ export const ProjectsIcon = () => (
 export const BagIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="2.6em"
-    height="2.6em"
+    width="2.5em"
+    height="2.5em"
     viewBox="0 0 24 24"
   >
     <path
@@ -195,8 +195,8 @@ export const BagIcon = () => (
 export const ResumeIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="2.6em"
-    height="2.6em"
+    width="2.5em"
+    height="2.5em"
     viewBox="0 0 24 24"
   >
     <path

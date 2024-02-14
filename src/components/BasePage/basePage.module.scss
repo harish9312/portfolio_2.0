@@ -1,4 +1,4 @@
-$color: #1e2b29;
+$color: #2e403d;
 $iconSize: 2.5em;
 
 .basePageContainer {
@@ -131,8 +131,13 @@ $iconSize: 2.5em;
       max-height: 50px;
     }
     .introSection {
-      max-height: calc(100vh - 90px);
+      max-height: calc(100% - 84px);
+      min-height: calc(100% - 84px);
       overflow: hidden;
+      .introContainer{
+        min-height: 72vh;
+        max-height: 72vh;
+      }
       .midContent {
         margin-top: 30px;
         overflow: scroll;

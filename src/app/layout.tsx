@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Harish Soni || React Dev",
   description:
     "I'm Harish Soni, a React Dev with the goal of making the software which must be scalables.",
+  openGraph: {
+    images: './ogImage.png'
+  }
 };
 
 export default function RootLayout({

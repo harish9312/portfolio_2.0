@@ -19,7 +19,7 @@ export const MouseTracker = () => {
     <div
       className="mouse-tracker"
       style={{
-        background: `radial-gradient(500px at ${clientX}px ${clientY}px, rgba(150, 133, 133, 0.15), transparent 80%)`,
+        background: `radial-gradient(500px at ${clientX}px ${clientY}px, rgba(150, 133, 133, 0.20), transparent 80%)`,
       }}
     />
   );

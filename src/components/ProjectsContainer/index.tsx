@@ -47,7 +47,7 @@ export const ProjectsContent = (props: IProjectsContent) => {
               return (
                 <div key={index} title={iconName.name}>
                   <Icon
-                    fontSize="70px"
+                    fontSize="40px"
                     color={iconName.color}
                     icon={iconName.icon}
                   />

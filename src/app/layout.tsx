@@ -9,9 +9,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Harish Soni || React Dev",
+  title: "Harish Soni",
   description:
-    "I'm Harish Soni, a React Dev with the goal of making the software which must be scalables.",
+    "Passionate Engineer specializing in the MERN stack, with a proven track record of developing robust and dynamic web applications. By seamlessly integrating MongoDB, Express.js, React.js, and Node.js, I create immersive digital experiences that captivate audiences. Explore my portfolio to uncover a myriad of projects that showcase my expertise and ingenuity.",
   openGraph: {
     images: 'https://raw.githubusercontent.com/harish9312/portfolio_2.0/main/src/app/ogImage.png'
   }

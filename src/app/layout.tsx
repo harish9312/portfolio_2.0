@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "I'm Harish Soni, a React Dev with the goal of making the software which must be scalables.",
   openGraph: {
-    images: './ogImage.png'
+    images: 'https://raw.githubusercontent.com/harish9312/portfolio_2.0/main/src/app/ogImage.png'
   }
 };
 

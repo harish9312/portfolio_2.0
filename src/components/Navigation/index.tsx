@@ -13,7 +13,7 @@ const routeArray = [
   {
     target: "_blank",
     pathName:
-      "https://drive.google.com/file/d/1iaisaKtJOx5nVlVe_bxj99V8ZS2LhhRx/view",
+      "https://drive.google.com/file/d/1Hu8qQV9pFDkhBxP_IDj-AHzog5AmasC0/view",
     title: "Resume",
     icon: <ResumeIcon />,
   },
